@@ -1,39 +1,31 @@
 package com.peterschmidt.orderservice.model;
 
+import java.util.List;
+
 public class Order {
     private int id;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private List<String> products;
+    private double totalPrice;
 
-    public Order(int id, String firstName, String lastName, String email) {
+    public Order(int id, List<String> products, double totalPrice) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+        this.products = products;
+        this.totalPrice = totalPrice;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public List<String> getProducts() {
+        return products;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setProducts(List<String> products) {
+        this.products = products;
     }
 
-    public String getLastName() {
-        return lastName;
+    public double getTotalPrice() {
+        return totalPrice;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }
