@@ -21,7 +21,7 @@ public class OrderServiceApplication {
 		List<String> products = new ArrayList<>();
 		products.add("iPhone");
 		products.add("iPad");
-		return new Order(id, products, 1899.98);
+		return new Order(id, 1, products, 1899.98);
 	}
 
 	public static void main(String[] args) {
